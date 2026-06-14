@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body id="about-page" class="page-about">
     <header class="site-header">
         <nav class="navbar container">
             <a class="brand" href="index.html">TaskFlow</a>
@@ -23,7 +23,84 @@
         </nav>
     </header>
 
-    <main></main>
+    <main class="about-main">
+        <section class="about-hero">
+            <div class="container about-shell">
+                <div class="about-copy">
+                    <p class="about-kicker">About TaskFlow</p>
+                    <h1 class="about-title">A simple task system built to keep work moving.</h1>
+                    <p class="about-lead">TaskFlow helps people plan work, stay focused, and ship without clutter. It is
+                        designed to be fast, lightweight, and easy to understand at a glance.</p>
+                    <div class="about-actions">
+                        <a class="btn primary" href="task-list.html">Explore Tasks</a>
+                        <a class="btn" href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <aside class="about-card about-card--highlight" aria-label="TaskFlow highlights">
+                    <h2 class="about-card-title">What TaskFlow focuses on</h2>
+                    <ul class="about-list">
+                        <li>Clear task visibility</li>
+                        <li>Low-friction task creation</li>
+                        <li>Simple progress tracking</li>
+                        <li>Clean, readable layouts</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container about-grid">
+                <article class="about-card">
+                    <p class="about-section-label">Mission</p>
+                    <h2>Make task management feel calm.</h2>
+                    <p>TaskFlow focuses on the essentials so users can spend less time organizing and more time
+                        finishing meaningful work.</p>
+                </article>
+                <article class="about-card">
+                    <p class="about-section-label">Approach</p>
+                    <h2>Keep every screen predictable.</h2>
+                    <p>The layout uses the same navigation pattern and a consistent visual structure across pages to
+                        reduce friction.</p>
+                </article>
+                <article class="about-card">
+                    <p class="about-section-label">Outcome</p>
+                    <h2>Make progress easier to maintain.</h2>
+                    <p>With a clearer overview and simple actions, it becomes easier to stay on top of deadlines and
+                        follow-through.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-section about-section--alt">
+            <div class="container about-story">
+                <div>
+                    <p class="about-section-label">Why it exists</p>
+                    <h2>Built for people who want a cleaner workflow.</h2>
+                </div>
+                <p class="about-story-text">TaskFlow was shaped around the idea that task tools should remove noise
+                    instead of adding more of it. The interface is intentionally straightforward so the focus stays on
+                    the work itself.</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="about-banner">
+                    <div>
+                        <p class="about-section-label">Next step</p>
+                        <h2>Start using TaskFlow today.</h2>
+                    </div>
+                    <a class="btn primary" href="add-task.html">Create a Task</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer about-footer">
+        <div class="container">
+            <p>© 2026 TaskFlow. Built to keep work organized.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
