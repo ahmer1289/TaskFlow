@@ -200,3 +200,150 @@ body {
         gap: 1rem;
     }
 }
+
+/* ------------------------------ */
+/* About page styles (isolated)   */
+/* All rules are scoped to #about-page */
+/* ------------------------------ */
+
+#about-page .about-main {
+    padding-bottom: 3rem;
+}
+
+#about-page .about-hero {
+    padding: 4rem 0 2rem;
+    background: radial-gradient(circle at top left, rgba(55, 90, 235, 0.08), transparent 38%);
+}
+
+#about-page .about-shell {
+    display: grid;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+#about-page .about-copy {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(14, 18, 26, 0.06);
+}
+
+#about-page .about-kicker,
+#about-page .about-section-label {
+    margin: 0 0 0.5rem;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+}
+
+#about-page .about-title {
+    margin: 0;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    color: #0b1220;
+}
+
+#about-page .about-lead {
+    margin: 1rem 0 0;
+    color: var(--muted);
+    max-width: 62ch;
+}
+
+#about-page .about-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+#about-page .about-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(14, 18, 26, 0.06);
+}
+
+#about-page .about-card--highlight {
+    border: 1px solid rgba(55, 90, 235, 0.14);
+    background: linear-gradient(180deg, rgba(55, 90, 235, 0.04), white 55%);
+}
+
+#about-page .about-card-title,
+#about-page .about-card h2,
+#about-page .about-story h2,
+#about-page .about-banner h2 {
+    margin: 0 0 0.75rem;
+    color: #0b1220;
+}
+
+#about-page .about-list {
+    margin: 1rem 0 0;
+    padding-left: 1.1rem;
+    color: #1f2937;
+}
+
+#about-page .about-list li+li {
+    margin-top: 0.5rem;
+}
+
+#about-page .about-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+#about-page .about-section {
+    padding: 1rem 0 0;
+}
+
+#about-page .about-section--alt {
+    padding-top: 2rem;
+}
+
+#about-page .about-story {
+    display: grid;
+    gap: 1rem;
+    align-items: start;
+}
+
+#about-page .about-story-text {
+    margin: 0;
+    color: var(--muted);
+    max-width: 70ch;
+}
+
+#about-page .about-banner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(55, 90, 235, 0.08), rgba(255, 255, 255, 0.9));
+    box-shadow: 0 10px 30px rgba(14, 18, 26, 0.05);
+}
+
+#about-page .about-footer {
+    margin-top: 1rem;
+}
+
+@media (min-width: 720px) {
+    #about-page .about-shell {
+        grid-template-columns: minmax(0, 1.7fr) minmax(280px, 1fr);
+    }
+
+    #about-page .about-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    #about-page .about-story {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+        align-items: center;
+    }
+
+    #about-page .about-title {
+        font-size: 3rem;
+    }
+}
