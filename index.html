@@ -23,7 +23,58 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <section class="home-hero">
+            <div class="container">
+                <h1 class="home-title">Organize your work. Ship faster.</h1>
+                <p class="home-lead">TaskFlow is a lightweight task manager that helps you track, prioritize and
+                    complete work with less friction.</p>
+                <div class="home-cta">
+                    <a class="btn primary" href="task-list.html">View Tasks</a>
+                    <a class="btn" href="add-task.html">Create Task</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-features">
+            <div class="container features">
+                <div class="feature">
+                    <h3>Simple Lists</h3>
+                    <p>Create and manage plain task lists with due dates and priorities.</p>
+                </div>
+                <div class="feature">
+                    <h3>Quick Add</h3>
+                    <p>Add tasks in one click and get back to work.</p>
+                </div>
+                <div class="feature">
+                    <h3>Details & Notes</h3>
+                    <p>Attach notes, links, or files to any task for context.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-preview">
+            <div class="container">
+                <h2>Recent Tasks</h2>
+                <ul class="task-preview-list">
+                    <li class="task-preview-item">Design homepage layout <span class="meta">Due: Tomorrow</span></li>
+                    <li class="task-preview-item">Write README.md <span class="meta">Due: In 3 days</span></li>
+                    <li class="task-preview-item">Fix login bug <span class="meta">Due: Today</span></li>
+                </ul>
+                <a class="view-all" href="task-list.html">See all tasks →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year">2026</span> TaskFlow — Built with care.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

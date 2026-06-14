@@ -125,3 +125,78 @@ body {
     text-align: center;
     color: var(--muted);
 }
+
+/* ----------------------------- */
+/* Home page styles (namespaced) */
+/* Keep these scoped to avoid mixing with existing rules */
+/* ----------------------------- */
+
+.home-hero {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, rgba(55, 90, 235, 0.04), transparent);
+}
+
+.home-title {
+    font-size: 2.25rem;
+    margin: 0 0 0.5rem;
+    color: #0b1220;
+}
+
+.home-lead {
+    color: var(--muted);
+    margin: 0 0 1rem;
+    max-width: 60ch;
+}
+
+.home-cta {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.home-features .feature {
+    min-height: 110px;
+}
+
+.task-preview-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.task-preview-item {
+    background: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(14, 18, 26, 0.04);
+}
+
+.task-preview-item .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (min-width: 720px) {
+    .home-title {
+        font-size: 2.75rem;
+    }
+
+    .home-features .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
