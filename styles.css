@@ -90,11 +90,9 @@ body {
 }
 
 .site-header {
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.5)
-    );
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.5));
     backdrop-filter: blur(4px);
     position: sticky;
     top: 0;
@@ -223,11 +221,9 @@ body {
 
 #about-page .about-hero {
     padding: 4rem 0 2rem;
-    background: radial-gradient(
-        circle at top left,
-        rgba(55, 90, 235, 0.08),
-        transparent 38%
-    );
+    background: radial-gradient(circle at top left,
+            rgba(55, 90, 235, 0.08),
+            transparent 38%);
 }
 
 #about-page .about-shell {
@@ -299,7 +295,7 @@ body {
     color: #1f2937;
 }
 
-#about-page .about-list li + li {
+#about-page .about-list li+li {
     margin-top: 0.5rem;
 }
 
@@ -336,11 +332,9 @@ body {
     align-items: center;
     padding: 1.5rem;
     border-radius: 18px;
-    background: linear-gradient(
-        135deg,
-        rgba(55, 90, 235, 0.08),
-        rgba(255, 255, 255, 0.9)
-    );
+    background: linear-gradient(135deg,
+            rgba(55, 90, 235, 0.08),
+            rgba(255, 255, 255, 0.9));
     box-shadow: 0 10px 30px rgba(14, 18, 26, 0.05);
 }
 
@@ -464,9 +458,11 @@ body {
 .task-list-page .priority.high {
     background: #ef4444;
 }
+
 .task-list-page .priority.medium {
     background: #f59e0b;
 }
+
 .task-list-page .priority.low {
     background: #10b981;
 }
@@ -475,21 +471,21 @@ body {
     .task-list-page .task-meta {
         align-items: flex-end;
     }
+
     .task-list-page .task-controls {
         justify-content: flex-start;
     }
 }
+
 /* -------------------------------- */
 /* Add Task Page Styles             */
 /* -------------------------------- */
 
 .add-task-page .add-task-hero {
     padding: 4rem 0 2rem;
-    background: linear-gradient(
-        180deg,
-        rgba(55, 90, 235, 0.08),
-        transparent
-    );
+    background: linear-gradient(180deg,
+            rgba(55, 90, 235, 0.08),
+            transparent);
 }
 
 .add-task-page .page-label {
@@ -581,5 +577,132 @@ body {
 
     .add-task-page h1 {
         font-size: 3rem;
+    }
+}
+
+/* -------------------------------- */
+/* Contact Page Styles              */
+/* Scoped to .contact-page only     */
+/* -------------------------------- */
+
+.contact-page {
+    padding: 3.5rem 0 4rem;
+}
+
+.contact-page .contact-hero {
+    padding: 2rem;
+    margin-bottom: 1.25rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg,
+            rgba(55, 90, 235, 0.08),
+            rgba(255, 255, 255, 0.95));
+    box-shadow: 0 10px 30px rgba(14, 18, 26, 0.06);
+}
+
+.contact-page .contact-hero h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    line-height: 1.1;
+    color: #0b1220;
+}
+
+.contact-page .contact-hero p {
+    margin: 0.75rem 0 0;
+    max-width: 62ch;
+    color: var(--muted);
+}
+
+.contact-page .contact-grid {
+    display: grid;
+    gap: 1rem;
+    align-items: start;
+}
+
+.contact-page .contact-card,
+.contact-page .contact-form {
+    background: white;
+    border-radius: 18px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(14, 18, 26, 0.06);
+}
+
+.contact-page .contact-card h2,
+.contact-page .contact-form h2 {
+    margin: 0 0 0.85rem;
+    color: #0b1220;
+    font-size: 1.35rem;
+}
+
+.contact-page .contact-card p {
+    margin: 0 0 1rem;
+    color: var(--muted);
+}
+
+.contact-page .contact-card ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: #1f2937;
+}
+
+.contact-page .contact-card li+li {
+    margin-top: 0.65rem;
+}
+
+.contact-page .contact-form form {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.contact-page .contact-form label {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+    width: 100%;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 10px;
+    background: #fff;
+    padding: 0.85rem 1rem;
+    font: inherit;
+    color: #0f172a;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-page .contact-form textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.contact-page .contact-form input:focus,
+.contact-page .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(55, 90, 235, 0.15);
+}
+
+.contact-page .form-actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.25rem;
+}
+
+.contact-page .form-actions .btn.primary {
+    min-width: 160px;
+}
+
+@media (min-width: 720px) {
+    .contact-page .contact-hero {
+        padding: 2.5rem;
+    }
+
+    .contact-page .contact-hero h1 {
+        font-size: 3rem;
+    }
+
+    .contact-page .contact-grid {
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 1.25rem;
     }
 }
