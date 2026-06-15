@@ -479,3 +479,107 @@ body {
         justify-content: flex-start;
     }
 }
+/* -------------------------------- */
+/* Add Task Page Styles             */
+/* -------------------------------- */
+
+.add-task-page .add-task-hero {
+    padding: 4rem 0 2rem;
+    background: linear-gradient(
+        180deg,
+        rgba(55, 90, 235, 0.08),
+        transparent
+    );
+}
+
+.add-task-page .page-label {
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.add-task-page h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #0b1220;
+}
+
+.add-task-page .page-description {
+    color: var(--muted);
+    max-width: 600px;
+    margin-top: 0.75rem;
+}
+
+.add-task-page .add-task-section {
+    padding-bottom: 4rem;
+}
+
+.add-task-page .task-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(14, 18, 26, 0.06);
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.add-task-page .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.add-task-page label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+}
+
+.add-task-page input,
+.add-task-page textarea,
+.add-task-page select {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 10px;
+    background: #fff;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.add-task-page input:focus,
+.add-task-page textarea:focus,
+.add-task-page select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(55, 90, 235, 0.15);
+}
+
+.add-task-page textarea {
+    resize: vertical;
+}
+
+.add-task-page .form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.add-task-page .form-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 720px) {
+    .add-task-page .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .add-task-page h1 {
+        font-size: 3rem;
+    }
+}

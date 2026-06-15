@@ -3,15 +3,17 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>TaskFlow - Add Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add Task - TaskFlow</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body class="add-task-page">
+
     <header class="site-header">
         <nav class="navbar container">
             <a class="brand" href="index.html">TaskFlow</a>
+
             <ul class="nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a class="active" href="add-task.html">Add Task</a></li>
@@ -23,7 +25,90 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <section class="add-task-hero">
+            <div class="container">
+                <p class="page-label">Task Management</p>
+                <h1>Add New Task</h1>
+                <p class="page-description">
+                    Create a new task, set a due date, and assign a priority level.
+                </p>
+            </div>
+        </section>
+
+        <section class="add-task-section">
+            <div class="container">
+
+                <form class="task-form">
+
+                    <div class="form-group">
+                        <label for="title">Task Title</label>
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            placeholder="Enter task title"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="5"
+                            placeholder="Enter task description"></textarea>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="dueDate">Due Date</label>
+                            <input
+                                type="date"
+                                id="dueDate"
+                                name="dueDate"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="priority">Priority</label>
+                            <select id="priority" name="priority">
+                                <option value="high">High</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">
+                            Save Task
+                        </button>
+
+                        <button type="reset" class="btn">
+                            Reset
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year">2026</span> TaskFlow — Built with care.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
 </body>
 
 </html>
